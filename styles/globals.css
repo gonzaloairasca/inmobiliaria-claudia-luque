@@ -13,8 +13,9 @@
 
 .background-hero {
   background: url("../components/hero/backgound-hero.jpg");
-  background-position: 50% 0%;
-  background-size: 200%;
+  background-position: 45% 0%;
+  /* background-size: 250%; */
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
