@@ -9,9 +9,9 @@ const Header = () => {
       <Image
         src={logo}
         alt="logo inmobiliaria claudia luque, en todo moreno y zona oeste"
-        className="w-28"
+        className="w-32 py-1"
       />
-      <Image src={menu} alt="icono menu" className="mr-4" />
+      <Image src={menu} alt="icono menu" className="mr-4 w-8" />
     </header>
   );
 };
