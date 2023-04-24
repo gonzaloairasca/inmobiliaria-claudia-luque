@@ -72,7 +72,7 @@ const PropiedadesDestacadas = () => {
         {propiedadesDestacadas.map((propiedad) => (
           <div
             key={propiedad.title}
-            className="w-11/12 mx-auto box-shadow my-4 rounded-b"
+            className="w-11/12 mx-auto box-shadow my-4 rounded"
           >
             <img
               src={propiedad.image}
