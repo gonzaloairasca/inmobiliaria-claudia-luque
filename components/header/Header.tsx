@@ -6,20 +6,24 @@ import Link from "next/link";
 import InfoHeader from "../infoHeader/InfoHeader";
 const Header = () => {
   return (
-    <header className="font-montserrat flex justify-between bg-[#B60D12] xl:flex-col">
-      <div className="hidden xl:block">
+    <header className="font-montserrat bg-[#B60D12] grid grid-cols-2 md:grid-cols-3  ">
+      <div className="hidden md:block col-span-3">
         <InfoHeader />
       </div>
-      <nav className="flex justify-between w-full ">
-        <Link href={"/"}>
-          <Image
-            src={logo}
-            alt="logo inmobiliaria claudia luque, en todo moreno y zona oeste"
-            className="w-28 py-1 lg:ml-4"
-          />
-        </Link>
-        <Image src={menu} alt="icono menu" className="mr-4 w-8 lg:hidden" />
-        <ul className="font-bold text-[#F2E205] xl:flex items-center hidden gap-7 mr-12">
+      <Link href={"/"}>
+        <Image
+          src={logo}
+          alt="logo inmobiliaria claudia luque, en todo moreno y zona oeste"
+          className="w-28 py-1 lg:ml-4"
+        />
+      </Link>
+      <Image
+        src={menu}
+        alt="icono menu"
+        className="mr-4 w-8 md:hidden justify-self-end place-self-center "
+      />
+      <nav className="justify-self-end place-self-center col-span-2">
+        <ul className="font-bold text-[#F2E205] md:text-xs lg:text-base md:flex items-center hidden gap-7 mr-12">
           <li>
             <Link href={"/"}>INCIO</Link>
           </li>
