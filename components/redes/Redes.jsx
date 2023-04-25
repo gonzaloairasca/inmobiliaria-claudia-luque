@@ -3,17 +3,21 @@ import React from "react";
 import wsp from "./whatsapp.svg";
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
+import instagramAmarillo from "./instagramAmarillo.svg";
+import facebookAmarillo from "./facebookAmarillo.svg";
+import wspAmarillo from "./whatsappAmarillo.svg";
+
 import Image from "next/image";
 
-const Redes = ({ celeste }) => {
+const Redes = ({ amarillo }) => {
   return (
     <ul className="flex gap-4 md:mr-4">
       <li>
         <a href="https://www.instagram.com/aguaslahilda" target="_blank">
           <Image
-            src={instagram}
-            width={25}
-            height={25}
+            src={amarillo ? instagramAmarillo : instagram}
+            width={20}
+            height={20}
             priority
             alt="logo instagram"
           />
@@ -22,9 +26,9 @@ const Redes = ({ celeste }) => {
       <li>
         <a href="https://www.facebook.com/AguasLaHilda" target="_blank">
           <Image
-            src={facebook}
-            width={14}
-            height={14}
+            src={amarillo ? facebookAmarillo : facebook}
+            width={11}
+            height={11}
             priority
             alt="logo instagram"
           />
@@ -36,9 +40,9 @@ const Redes = ({ celeste }) => {
           target="_blank"
         >
           <Image
-            src={wsp}
-            width={25}
-            height={25}
+            src={amarillo ? wspAmarillo : wsp}
+            width={20}
+            height={20}
             priority
             alt="logo instagram"
           />

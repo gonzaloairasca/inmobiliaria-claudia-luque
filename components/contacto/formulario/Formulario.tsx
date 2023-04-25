@@ -35,14 +35,14 @@ const Formulario = () => {
   };
 
   return (
-    <section
+    <div
       className=" font-montserrat flex flex-col items-center scroll-m-20 lg:flex-row lg:justify-center "
       id="contacto"
     >
       <form
         ref={form}
         onSubmit={sendEmail}
-        className=" pt-4 pb-10 px-6 sm:max-w-md w-full lg:w-1/2 "
+        className=" pt-4 pb-10 px-6 sm:max-w-md w-full "
       >
         <h2 className="text-3xl font-bold py-8 text-[#B60D12]">CONTACTO</h2>
         <label htmlFor="user_name" className="text-[#B60D12] font-bold">
@@ -88,7 +88,7 @@ const Formulario = () => {
           Enviar consulta
         </button>
       </form>
-    </section>
+    </div>
   );
 };
 

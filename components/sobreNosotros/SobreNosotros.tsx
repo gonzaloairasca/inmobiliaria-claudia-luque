@@ -2,8 +2,8 @@ import React from "react";
 
 const SobreNosotros = () => {
   return (
-    <section className="bg-[#B60D12] text-[#F2E205] font-montserrat px-[16px] py-3">
-      <h2 className="text-[1.6rem] font-semibold pt-4 pb-2">Sobre Nosotros</h2>
+    <section className="bg-[#B60D12] text-[#F2E205] font-montserrat px-[16px] pt-7 pb-10 xl:px-[100px] ">
+      <h2 className="text-[1.6rem] font-semibold pt-4 pb-4">SOBRE NOSOTROS</h2>
       <p className="text-lg py-3">
         Somos un equipo de expertos en el mercado inmobiliario y estamos aquí
         para ayudarlo a encontrar su hogar ideal.

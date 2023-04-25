@@ -64,15 +64,15 @@ const PropiedadesDestacadas = () => {
     },
   ];
   return (
-    <section className="font-montserrat">
-      <h2 className="font-montserrat font-bold text-[#F2E205] text-2xl text-center my-6">
+    <section className="font-montserrat xl:max-w-screen-full sm:px-[16px] xl:px-[100px] mx-auto md:pt-6 md:pb-16">
+      <h2 className="font-montserrat font-bold text-[#F2E205] text-2xl text-center xl:text-left xl:text-3xl my-6">
         PROPIEDADES DESTACADAS
       </h2>
-      <div>
+      <div className="sm:grid sm:grid-cols-2 sm:gap-4 md:max-w-4xl xl:px-0 xl:grid-cols-4 xl:max-w-full mx-auto	 ">
         {propiedadesDestacadas.map((propiedad) => (
           <div
             key={propiedad.title}
-            className="w-11/12 mx-auto box-shadow my-4 rounded"
+            className="w-11/12 sm:w-auto mx-auto box-shadow my-4 rounded"
           >
             <img
               src={propiedad.image}
@@ -80,18 +80,18 @@ const PropiedadesDestacadas = () => {
               className="rounded-t"
             />
             <div>
-              <h2 className="text-center font-bold text-xl mb-3 mt-2">
+              <h2 className="text-center font-bold text-regular mb-3 mt-3 ">
                 {propiedad.title}{" "}
                 <span className="text-[#B60D12] font-bold">
                   {propiedad.price}
                 </span>
               </h2>
-              <p className="text-center mb-4 text-zinc-900">
+              <p className="text-center mb-4 text-zinc-900 xl:text-xs">
                 {propiedad.location}
               </p>
             </div>
             <div className="pb-4 text-sm">
-              <ul className="flex justify-center gap-4">
+              <ul className="flex justify-center gap-4 xl:text-xs">
                 <li className="flex items-center">
                   <Image
                     src={dormitorios}
