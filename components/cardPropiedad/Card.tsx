@@ -3,7 +3,22 @@ import React from "react";
 import Image from "next/image";
 import dormitorios from "./dormitorios.png";
 import baños from "./baños.png";
-import { Property } from "../buscadorDePropiedades/PropertyList";
+
+interface Property {
+  id: number;
+  title: string;
+  operation: string;
+  propertyType: string;
+  location: string;
+  adress: string;
+  currency: string;
+  description: string;
+  image: string;
+  price: number;
+  size: number;
+  bathrooms: number;
+  bedrooms: number;
+}
 
 const Card: React.FC<Property> = ({
   id,

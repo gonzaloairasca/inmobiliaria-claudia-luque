@@ -3,7 +3,7 @@ import BuscadorDePropiedades, { SearchFormData } from "./BuscadorDePropiedades";
 import Card from "../cardPropiedad/Card";
 import { properties } from "./properties";
 
-export interface Property {
+interface Property {
   id: number;
   title: string;
   operation: string;
