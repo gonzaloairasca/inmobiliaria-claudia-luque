@@ -16,7 +16,7 @@ const NavMobile = ({ nav, setNav }: any) => {
           </Link>
         </li>
         <li className="my-3">
-          <Link href={"/"} onClick={() => setNav(!nav)}>
+          <Link href={"/propiedades"} onClick={() => setNav(!nav)}>
             BUSCAR PROPIEDADES
           </Link>
         </li>

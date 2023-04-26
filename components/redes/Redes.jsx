@@ -20,6 +20,7 @@ const Redes = ({ amarillo }) => {
             height={20}
             priority
             alt="logo instagram"
+            className="w-auto"
           />
         </a>
       </li>
@@ -31,6 +32,7 @@ const Redes = ({ amarillo }) => {
             height={11}
             priority
             alt="logo instagram"
+            className="w-auto"
           />
         </a>
       </li>
@@ -45,6 +47,7 @@ const Redes = ({ amarillo }) => {
             height={20}
             priority
             alt="logo instagram"
+            className="w-auto"
           />
         </a>
       </li>

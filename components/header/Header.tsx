@@ -43,7 +43,7 @@ const Header = () => {
             <Link href={"/"}>INCIO</Link>
           </li>
           <li>
-            <Link href={"/"}>BUSCAR PROPIEDADES</Link>
+            <Link href={"/propiedades"}>BUSCAR PROPIEDADES</Link>
           </li>
           <li>
             <Link href={"/"}>SOBRE NOSOTROS</Link>

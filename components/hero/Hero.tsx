@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -12,9 +13,11 @@ const Hero = () => {
       <h4 className="italic font-regular text-white text-shadow text-2xl mt-3 w-11/12 xl:w-6/12 xl:text-4xl">
         Martillera y desarrolladora inmnobiliaria.
       </h4>
-      <button className="text-[#F2E205] text-2xl font-bold text-shadow box-shadow bg-gradient-to-r from-[#B60D12] to-[#b60d13c4] px-4 pt-[9px] pb-[12px]  rounded mt-6">
-        Buscar Propiedades
-      </button>
+      <Link href={"/propiedades"}>
+        <button className="text-[#F2E205] text-2xl font-bold text-shadow box-shadow bg-gradient-to-r from-[#B60D12] to-[#b60d13c4] px-4 pt-[9px] pb-[12px]  rounded mt-6">
+          Buscar Propiedades
+        </button>
+      </Link>
     </main>
   );
 };

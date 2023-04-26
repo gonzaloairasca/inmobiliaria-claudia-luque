@@ -12,14 +12,14 @@ const Footer = () => {
           width={120}
           height={120}
           alt="logo claudia luque"
-          className="mx-auto py-2 xl:hidden"
+          className="mx-auto w-auto py-2 xl:hidden"
         />
         <Image
           src={logo}
           width={250}
           height={250}
           alt="logo claudia luque"
-          className="mx-auto py-2 hidden xl:block"
+          className="mx-auto w-auto  py-2 hidden xl:block"
         />
         <h2 className="text-xl font-bold xl:hidden ">
           Inmobiliaria Claudia Luque
@@ -28,7 +28,7 @@ const Footer = () => {
           CLAUDIA LUQUE INMOBILIARIA © 2023
         </h3>
       </div>
-      <div className=" text-left xl:mt-10">
+      <div className=" lg:text-left xl:mt-10">
         <h2 className="text-xl font-bold hidden xl:block xl:mb-2 ">
           Inmobiliaria Claudia Luque
         </h2>
