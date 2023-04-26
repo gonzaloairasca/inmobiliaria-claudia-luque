@@ -5,6 +5,7 @@ export const properties = [
     operation: "venta",
     propertyType: "casa",
     location: "moreno centro",
+    adress: "Country San Diego, Moreno, Buenos Aires.",
     currency: "pesos",
     price: 150000,
     image:
@@ -21,6 +22,7 @@ export const properties = [
     operation: "alquiler",
     propertyType: "departamento",
     location: "trujui",
+    adress: "Country San Diego, Moreno, Buenos Aires.",
     currency: "dolares",
     price: 1200,
     image:
@@ -37,6 +39,7 @@ export const properties = [
     operation: "venta",
     propertyType: "ph",
     location: "el fondo",
+    adress: "Country San Diego, Moreno, Buenos Aires.",
     currency: "pesos",
     price: 180000,
     bedrooms: 4,
@@ -53,6 +56,7 @@ export const properties = [
     operation: "alquiler",
     propertyType: "terreno",
     location: "las catones",
+    adress: "Country San Diego, Moreno, Buenos Aires.",
     currency: "dolares",
     price: 5000,
     image:

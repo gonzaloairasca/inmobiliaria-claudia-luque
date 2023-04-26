@@ -3,22 +3,35 @@ import React from "react";
 import Image from "next/image";
 import dormitorios from "./dormitorios.png";
 import baños from "./baños.png";
+import { Property } from "../buscadorDePropiedades/PropertyList";
 
-const Card = ({ propiedad }: any) => {
+const Card: React.FC<Property> = ({
+  id,
+  title,
+  operation,
+  propertyType,
+  location,
+  adress,
+  currency,
+  image,
+  description,
+  price,
+  bathrooms,
+  size,
+  bedrooms,
+}) => {
+  console.log(image);
   return (
     <div
-      key={propiedad.title}
+      key={title}
       className="w-11/12 sm:w-auto mx-auto box-shadow my-4 rounded"
     >
-      <img src={propiedad.image} alt={propiedad.title} className="rounded-t" />
+      <img src={image} alt={title} className="rounded-t" />
       <div>
         <h2 className="text-center font-bold text-regular mb-3 mt-3 ">
-          {propiedad.title}{" "}
-          <span className="text-[#B60D12] font-bold">{propiedad.price}</span>
+          {title} <span className="text-[#B60D12] font-bold">{price}</span>
         </h2>
-        <p className="text-center mb-4 text-zinc-900 xl:text-xs">
-          {propiedad.location}
-        </p>
+        <p className="text-center mb-4 text-zinc-900 xl:text-xs">{adress}</p>
       </div>
       <div className="pb-4 text-sm">
         <ul className="flex justify-center gap-4 xl:text-xs">
@@ -28,12 +41,12 @@ const Card = ({ propiedad }: any) => {
               alt="icon dormitorios"
               className="mr-2 w-3"
             />
-            {propiedad.dormitorios}
+            {bedrooms}
             <span className="ml-2">Dormitorios</span>
           </li>
           <li className="flex items-center">
             <Image src={baños} alt="pepe" className="mr-2 w-3" />
-            {propiedad.baños}
+            {bathrooms}
             <span className="ml-2 ">Baños</span>
           </li>
           <li className="flex items-center">
@@ -50,7 +63,7 @@ const Card = ({ propiedad }: any) => {
                 fill="#0D0D0D"
               />
             </svg>
-            {propiedad.superficie}
+            {size}m2
           </li>
         </ul>
       </div>

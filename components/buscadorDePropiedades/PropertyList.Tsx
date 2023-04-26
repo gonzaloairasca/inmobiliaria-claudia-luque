@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import BuscadorDePropiedades, { SearchFormData } from "./BuscadorDePropiedades";
+import Card from "../cardPropiedad/Card";
 import { properties } from "./properties";
 
 export interface Property {
@@ -8,35 +9,15 @@ export interface Property {
   operation: string;
   propertyType: string;
   location: string;
+  adress: string;
   currency: string;
   description: string;
   image: string;
   price: number;
   size: number;
   bathrooms: number;
+  bedrooms: number;
 }
-
-const PropertyCard: React.FC<Property> = ({
-  id,
-  title,
-  operation,
-  propertyType,
-  location,
-  currency,
-  image,
-  description,
-  price,
-  bathrooms,
-}) => {
-  return (
-    <div>
-      <h2>{`${operation} - ${propertyType} en ${location}`}</h2>
-      <p>{`Precio: ${price} ${currency}`}</p>
-      <p>{`Habitaciones: ${bathrooms}`}</p>
-      <p>{`Baños: ${bathrooms}`}</p>
-    </div>
-  );
-};
 
 const PropertyList: React.FC = () => {
   const [filteredProperties, setFilteredProperties] =
@@ -73,7 +54,7 @@ const PropertyList: React.FC = () => {
         </p>
       ) : (
         filteredProperties.map((property) => (
-          <PropertyCard key={property.id} {...property} />
+          <Card key={property.id} {...property} />
         ))
       )}
     </div>

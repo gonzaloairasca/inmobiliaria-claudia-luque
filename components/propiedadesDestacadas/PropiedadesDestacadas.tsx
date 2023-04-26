@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Card from "../cardPropiedad/Card";
+import { properties } from "../buscadorDePropiedades/properties";
 
 const PropiedadesDestacadas = () => {
   const propiedadesDestacadas = [
@@ -67,8 +68,8 @@ const PropiedadesDestacadas = () => {
         PROPIEDADES DESTACADAS
       </h2>
       <div className="sm:grid sm:grid-cols-2 sm:gap-4 md:max-w-4xl xl:px-0 xl:grid-cols-4 xl:max-w-full mx-auto	 ">
-        {propiedadesDestacadas.map((propiedad) => (
-          <Card propiedad={propiedad} key={propiedad.title} />
+        {properties.map((propiedad) => (
+          <Card {...propiedad} key={propiedad.title} />
         ))}
       </div>
     </section>
